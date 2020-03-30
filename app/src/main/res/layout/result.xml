@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#0D0D0D">
+
+	<LinearLayout
+		android:id="@+id/result_header"
+		android:layout_width="match_parent"
+		android:layout_height="135dp"
+		android:layout_weight="1"
+		android:background="#0D0D0D"
+		android:padding="10dp">
+
+		<TextView
+			android:id="@+id/country_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textStyle="bold"
+			android:textColor="#ffffff"
+			android:text="Philippines"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_below="@id/result_header"
+		android:layout_marginRight="8dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginBottom="8dp"
+		android:background="#ffffff"
+		android:orientation="vertical">
+
+		<ScrollView
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+			android:layout_marginTop="65dp"
+			android:fitsSystemWindows="true"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal">
+
+					<android.support.v7.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:layout_margin="5dp"
+						style="@style/CardView.Dark">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="5dp"
+							android:background="#ffffff"
+							android:orientation="vertical">
+
+							<TextView
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textStyle="bold"
+								android:textColor="#FFFFFF"
+								android:textAppearance="?android:attr/textAppearanceMedium"
+								android:text="Cases"
+								android:paddingTop="0dp"
+								android:paddingBottom="2dp"
+								android:background="#FF202020"/>
+
+							<TextView
+								android:id="@+id/result_cases"
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textColor="#1D1D1D"
+								android:textAppearance="?android:attr/textAppearanceLarge"
+								android:text="210"
+								android:paddingTop="2dp"
+								android:paddingBottom="2dp"/>
+
+						</LinearLayout>
+
+					</android.support.v7.widget.CardView>
+
+					<android.support.v7.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:layout_margin="5dp"
+						style="@style/CardView.Dark">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="5dp"
+							android:background="#ffffff"
+							android:orientation="vertical">
+
+							<TextView
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textStyle="bold"
+								android:textColor="#FFFFFF"
+								android:textAppearance="?android:attr/textAppearanceMedium"
+								android:text="Deaths"
+								android:paddingTop="0dp"
+								android:paddingBottom="2dp"
+								android:background="#FF202020"/>
+
+							<TextView
+								android:id="@+id/result_deaths"
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textColor="#1D1D1D"
+								android:textAppearance="?android:attr/textAppearanceLarge"
+								android:text="102"
+								android:paddingTop="2dp"
+								android:paddingBottom="2dp"/>
+
+						</LinearLayout>
+
+					</android.support.v7.widget.CardView>
+
+					<android.support.v7.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:layout_margin="5dp"
+						style="@style/CardView.Dark">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="5dp"
+							android:background="#ffffff"
+							android:orientation="vertical">
+
+							<TextView
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textStyle="bold"
+								android:textColor="#FFFFFF"
+								android:textAppearance="?android:attr/textAppearanceMedium"
+								android:text="Recovered"
+								android:paddingTop="0dp"
+								android:paddingBottom="2dp"
+								android:background="#FF202020"/>
+
+							<TextView
+								android:id="@+id/result_recovered"
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textColor="#1D1D1D"
+								android:textAppearance="?android:attr/textAppearanceLarge"
+								android:text="100"
+								android:paddingTop="2dp"
+								android:paddingBottom="2dp"/>
+
+						</LinearLayout>
+
+					</android.support.v7.widget.CardView>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:layout_marginTop="5dp">
+
+					<android.support.v7.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:layout_margin="5dp"
+						style="@style/CardView.Dark">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="5dp"
+							android:background="#ffffff"
+							android:orientation="vertical">
+
+							<TextView
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textStyle="bold"
+								android:textColor="#FFFFFF"
+								android:textAppearance="?android:attr/textAppearanceMedium"
+								android:text="New Cases"
+								android:paddingTop="0dp"
+								android:paddingBottom="2dp"
+								android:background="#FF202020"/>
+
+							<TextView
+								android:id="@+id/result_new_cases"
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textColor="#1D1D1D"
+								android:textAppearance="?android:attr/textAppearanceLarge"
+								android:text="10"
+								android:paddingTop="2dp"
+								android:paddingBottom="2dp"/>
+
+						</LinearLayout>
+
+					</android.support.v7.widget.CardView>
+
+					<android.support.v7.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:layout_margin="5dp"
+						style="@style/CardView.Dark">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_margin="5dp"
+							android:background="#ffffff"
+							android:orientation="vertical">
+
+							<TextView
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textStyle="bold"
+								android:textColor="#FFFFFF"
+								android:textAppearance="?android:attr/textAppearanceMedium"
+								android:text="New Deaths"
+								android:paddingTop="0dp"
+								android:paddingBottom="2dp"
+								android:background="#FF202020"/>
+
+							<TextView
+								android:id="@+id/result_new_deaths"
+								android:gravity="center"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:textColor="#1D1D1D"
+								android:textAppearance="?android:attr/textAppearanceLarge"
+								android:text="10"
+								android:paddingTop="2dp"
+								android:paddingBottom="2dp"/>
+
+						</LinearLayout>
+
+					</android.support.v7.widget.CardView>
+
+				</LinearLayout>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:layout_margin="5dp"
+					style="@style/CardView.Dark">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_margin="5dp"
+						android:background="#ffffff"
+						android:orientation="vertical">
+
+						<TextView
+							android:gravity="center"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:textStyle="bold"
+							android:textColor="#FFFFFF"
+							android:textAppearance="?android:attr/textAppearanceLarge"
+							android:text="Summary"
+							android:paddingTop="3dp"
+							android:paddingBottom="6dp"
+							android:background="#FF202020"/>
+
+						<TextView
+							android:id="@+id/result_summary"
+							android:gravity="center"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:textColor="#1D1D1D"
+							android:textAppearance="?android:attr/textAppearanceMedium"
+							android:text="😷Confirmed Cases has increased by 10%\n💀Death Toll has increased by 20%\n👍Recovered Patients has increased by 13%"
+							android:paddingTop="2dp"
+							android:paddingBottom="2dp"/>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/country_flag"
+		android:layout_width="145dp"
+		android:layout_height="140dp"
+		android:layout_below="@id/result_header"
+		android:layout_centerHorizontal="true"
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:src="@drawable/philippines"
+		android:background="@drawable/card_profile_main_bg"
+		android:cropToPadding="true"
+		android:layout_marginTop="-80dp"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:background="#0D0D0D"
+			android:padding="2dp">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:background="@drawable/searchview_bg">
+
+				<ImageView
+					android:layout_width="76dp"
+					android:layout_height="42dp"
+					android:layout_weight="1"
+					android:layout_gravity="center_vertical"
+					android:background="#ffffff"
+					android:src="@drawable/search"
+					android:cropToPadding="true"
+					android:padding="4dp"/>
+
+				<View
+					android:layout_height="match_parent"
+					android:layout_width="1dp"
+					android:layout_marginTop="2dp"
+					android:layout_marginBottom="2dp"
+					android:layout_marginRight="2dp"
+					android:background="#0D0D0D"
+					android:layout_gravity="center_vertical"/>
+
+				<EditText
+					android:id="@+id/searchview"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_weight="1"
+					android:layout_gravity="center_vertical"
+					android:textColor="#111111"
+					android:background="#ffffff"
+					android:hint="Search country..."
+					android:textColorHint="#7A7A7A"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<android.support.v4.widget.SwipeRefreshLayout
+			android:id="@+id/refresh_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="12dp"
+			android:layout_marginRight="12dp"
+			android:layout_marginBottom="12dp"
+			android:background="#00000000">
+			
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:background="#ffffff">
+				
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/country_list"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:scrollbars="none"
+					android:visibility="gone"/>
+
+				<TextView
+					android:id="@+id/no_internet"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="#777777"
+					android:gravity="center"
+					android:visibility="gone"/>
+
+				<LinearLayout
+					android:id="@+id/loader"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_height="match_parent"
+					android:layout_width="match_parent">
+
+					<TextView
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_height="wrap_content"
+						android:layout_width="match_parent"
+						android:textColor="#777777"
+						android:text="Fetching data..."
+						android:gravity="center"/>
+
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+		</android.support.v4.widget.SwipeRefreshLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

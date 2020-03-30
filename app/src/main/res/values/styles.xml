@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light"></style>
+	
+	<style name="Card.Material.Red" parent="@style/CardView.Light">
+		<item name="cardBackgroundColor">#e74c3c</item>
+	</style>
+	
+	<style name="Card.Material.Blue" parent="@style/CardView.Light">
+		<item name="cardBackgroundColor">#37A7E7</item>
+	</style>
+	
+	<style name="Card.Material.Green" parent="@style/CardView.Light">
+		<item name="cardBackgroundColor">#37E739</item>
+	</style>
+	
+</resources>
