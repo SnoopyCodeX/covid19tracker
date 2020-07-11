@@ -1,7 +1,8 @@
 # CoViD-19 Tracker
-######Version 24.03.20-beta
+###Version 24.03.20-beta
+[![DepShield Badge](https://depshield.sonatype.org/badges/SnoopyCodeX/repository/depshield.svg)](https://depshield.github.io)
 
-####This is an opensource project that shows all the current status of every country that are affected by the Corona Virus Disease 2019.
+###This is an opensource project that shows all the current status of every country that are affected by the Corona Virus Disease 2019.
 
  **Screenshots:** 
 ![image](https://raw.githubusercontent.com/SnoopyCodeX/covid19tracker/master/screenshots/Screenshot_20200330-193416.png)
